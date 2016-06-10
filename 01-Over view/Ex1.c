@@ -9,7 +9,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-void main()
+int main()
 {
 	int a = 1;
 	clock_t start_t, end_t;
@@ -31,4 +31,5 @@ void main()
    	//calculation of the total time taken by the CPU in Seconds
    	total_t = (double)(end_t - start_t) / CLOCKS_PER_SEC;
    	printf("Total time taken by CPU: %f\n", total_t);
+   	return 0;
 }
